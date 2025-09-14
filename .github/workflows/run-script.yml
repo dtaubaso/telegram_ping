@@ -2,12 +2,14 @@
 name: Run script
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:   # para lanzarlo manualmente cuando quieras
     inputs:
       MESSAGE:
         description: "Mensaje a enviar"
         required: false
         default: ""
+  schedule:
+    - cron: "0 * * * *"    
 
 jobs:
   ping:
