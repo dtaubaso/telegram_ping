@@ -31,4 +31,4 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           DAMIAN_BOT_CHAT: ${{ secrets.DAMIAN_BOT_CHAT }}
           MESSAGE: ${{ github.event.inputs.MESSAGE || 'Ping desde GitHub Actions' }}
-        run: python scripts/telegram_ping.py
+        run: python telegram_ping.py
